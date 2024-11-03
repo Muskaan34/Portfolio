@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1000px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  padding: 40px;
+  background-color: #3498db; /* Bright blue background */
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.name-title {
+  margin: 0;
+  font-size: 3em;
+  color: #1f1212; /* Bright red-pink color for the name */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.highlight-text {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #ecf0f1;
+}
+
+/* Contact Information */
+.contact-info {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.1em;
+}
+
+.contact-info li {
+  display: inline;
+  font-weight: bold;
+  color: #ecf0f1;
+}
+
+/* Section Titles */
+h2 {
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  color: #3498db;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+/* Skills Section */
+.skills {
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.skills-grid div {
+  background-color: #74b9ff;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.skills-grid div:hover {
+  transform: scale(1.05);
+  background-color: #0984e3;
+}
+
+/* Project Section */
+.projects article {
+  margin-bottom: 20px;
+  background-color: #dff9fb;
+  padding: 15px;
+  border-left: 5px solid #6c5ce7;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.projects article:hover {
+  transform: scale(1.02);
+}
+
+.popup {
+  animation: pop 0.6s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes pop {
+  0% {
+      transform: translateY(10px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Footer Contact Section */
+footer h2 {
+  font-size: 1.8em;
+  color: #3498db;
+  text-align: center;
+}
+
+footer .contact-info li {
+  font-size: 1.2em;
+}
+
+footer .contact-info li a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #3498db;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+footer .contact-info li a:hover {
+  background-color: #3498db;
+  color: #ffffff;
+}
